@@ -1,6 +1,6 @@
-# 🌿 Leaf Disease Detection System
+# AI Generated Image detection
 
-An intelligent web-based system that detects plant leaf diseases from images using deep learning. This application helps farmers and agriculturists quickly identify diseases and take appropriate action to protect their crops.
+An intelligent web-based system to predict whether the uplaoded image is AI or Real along with confidence score and lets you see your past uploads.
 
 ---
 
