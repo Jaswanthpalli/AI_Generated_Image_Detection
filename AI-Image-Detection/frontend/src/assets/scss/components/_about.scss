@@ -1,0 +1,142 @@
+.about {
+  padding: 4rem 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: var(--body-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 255, 170, 0.05); /* subtle neon */
+  }
+
+  &__img {
+    justify-self: center;
+    border-radius: 1rem;
+    height: 30rem;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.1);
+  }
+
+  &__details {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.05);
+    color: var(--text-color);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input[type="file"] {
+      padding: 0.5rem;
+      background-color: var(--body-color);
+      color: var(--text-color);
+      border: 1px solid var(--first-color-light);
+      border-radius: 0.5rem;
+      font-size: var(--normal-font-size);
+    }
+
+    button {
+      padding: 0.7rem;
+      background-color: var(--first-color);
+      color: var(--body-color);
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: var(--font-semi-bold);
+      font-size: var(--normal-font-size);
+      transition: background 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: var(--first-color-alt);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .image-preview {
+    margin-top: 1.5rem;
+
+    h4 {
+      margin-bottom: 0.5rem;
+      color: var(--title-color);
+      font-size: var(--h3-font-size);
+    }
+
+    img {
+      max-width: 100%; /* Prevents the image from being too large */
+      width: 400px; /* You can adjust this based on your design */
+      height: auto;
+      border-radius: 0.5rem;
+      border: 1px solid var(--first-color-lighten);
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow to the image */
+    }
+  }
+
+  .result {
+    margin-top: 2rem;
+    background-color: var(--first-color-lighten);
+    padding: 1.5rem; /* More padding for a better layout */
+    border-radius: 1rem;
+    color: var(--title-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for result box */
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02); /* Slight hover effect */
+    }
+
+    h3 {
+      margin-bottom: 1rem; /* Adds more space after the title */
+      color: var(--first-color);
+      font-size: var(--h2-font-size);
+      font-weight: 700; /* Makes the title more prominent */
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: var(--normal-font-size);
+      color: var(--text-color);
+
+      strong {
+        color: var(--first-color); /* Highlights the prediction and confidence text */
+      }
+    }
+  }
+
+  .result__res {
+    color: black;
+    font-weight: 600;
+    background-color: var(--first-color-lighten);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-left: 0.5rem; /* Adds space between the label and the result */
+  }
+
+  .status__loading {
+    color: var(--first-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .status__error {
+    margin-top: 1rem;
+    color: hsl(0, 70%, 60%); /* Light modern red for errors */
+    font-weight: var(--font-semi-bold);
+    font-size: 1.1rem;
+  }
+}

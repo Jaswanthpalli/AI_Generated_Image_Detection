@@ -1,0 +1,59 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 3.5rem; /* 56px */
+
+    /*========== Colors ==========*/
+    /* Color mode HSL or HEX */
+    --hue: 220; /* Just a base hue, but we'll mainly use hex for precision */
+
+    --first-color: #4F46E5; /* Indigo-500 - Primary accent */
+    --first-color-alt: #6366F1; /* Indigo-400 - Slightly lighter accent */
+    --first-color-light: #818CF8; /* Indigo-300 - Even lighter for hover effects */
+    --first-color-lighten: #E0E7FF; /* Indigo-100 - Subtle backgrounds if needed */
+    --title-color: #FFFFFF; /* Pure white for titles */
+    --text-color: #D1D5DB; /* Gray-300 for body text */
+    --text-color-light: #9CA3AF; /* Gray-400 for lighter text */
+    --body-color: #0D0D0D; /* Deep black background */
+    --container-color: #111111; /* Slightly lighter than body, for cards/containers */
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Responsive typography */
+    @media screen and (min-width: 968px){
+        --big-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margins Bottom ==========*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}

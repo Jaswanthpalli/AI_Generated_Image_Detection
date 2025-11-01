@@ -1,0 +1,112 @@
+.login {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen height */
+  padding: 2rem;
+  background-color: var(--body-color);
+}
+
+.login__box {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for dark theme */
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login__input-group label {
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+/* Styling the input field */
+.login__input-group input {
+  width: 100%; /* Full width of the container */
+  padding: 0.75rem;
+  border: 1px solid var(--text-color-light); /* Light border */
+  background-color: transparent; /* Transparent background */
+  color: var(--text-color); /* Text color */
+  border-radius: 0.75rem;
+  outline: none;
+  font-size: var(--normal-font-size);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth effect */
+}
+
+/* Focus effect on input field */
+.login__input-group input:focus {
+  border-color: var(--first-color); /* Border color on focus */
+  box-shadow: 0 0 5px var(--first-color); /* Optional: Adds a subtle glow effect on focus */
+}
+
+
+.login__btn {
+  margin-top: 1rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login__btn:hover {
+  background-color: var(--first-color-alt);
+}
+
+.login__register-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.login__register-link {
+  color: var(--first-color-light);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Feedback Section */
+.feedback {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  background-color: var(--body-color);
+  width: 100vw;
+}
+
+/* Styling the textarea */
+.login__input-group textarea {
+  width: 100%; /* Full width of the container */
+  padding: 1rem;
+  border: 1px solid var(--text-color-light); /* Light border for the textarea */
+  border-radius: 0.75rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--container-color); /* Background color */
+  resize: none; /* Disables resizing */
+  outline: none;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+/* Focus effect on textarea */
+.login__input-group textarea:focus {
+  border-color: var(--first-color); /* Border color on focus */
+  box-shadow: 0 0 5px var(--first-color); /* Optional: adds a glow effect */
+}

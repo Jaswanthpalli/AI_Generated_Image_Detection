@@ -1,0 +1,12 @@
+/* Prevent blinking cursor in headings or any non-interactive text */
+h1, h2, h3, h4, h5, h6, p, span, a {
+  outline: none;
+  user-select: none; /* Prevents text selection (no cursor) */
+  -webkit-user-drag: none; /* Prevents dragging of text on WebKit browsers */
+  cursor: default; /* Normal cursor, no input/caret behavior */
+}
+
+/* Optional: Remove focus outline from anchor links, buttons, etc., if you don't want it */
+a, button, input, textarea {
+  outline: none;
+}
